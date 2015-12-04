@@ -1,19 +1,9 @@
-# ButlerCage
+# Butler.Cage
 
-**TODO: Add description**
+A Butler plugin that finds Nick Cage pictures
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Add `{:butler_cage, "~> 0.0.1"}` to your mix dependencies.
 
-  1. Add butler_cage to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:butler_cage, "~> 0.0.1"}]
-        end
-
-  2. Ensure butler_cage is started before your application:
-
-        def application do
-          [applications: [:butler_cage]]
-        end
+Then add `{Butler.Cage, []}` to your `:plugins` config.
