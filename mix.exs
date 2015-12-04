@@ -7,6 +7,7 @@ defmodule Butler.Cage.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
      package: package,
      deps: deps]
   end
@@ -31,11 +32,17 @@ defmodule Butler.Cage.Mixfile do
     [{:butler, "~> 0.6.2"}]
   end
 
+  defp description do
+    """
+    A Butler plugin for showing silly photos of Nick Cage.
+    """
+  end
+
   defp package do
     [
-      maintainers: ["Chris Keathley"]
-    , licenses: ["MIT"]
-    , links: %{github: "https://github.com/keathley/butler_cage"}
+      maintainers: ["Chris Keathley"],
+      licenses: ["MIT"],
+      links: %{github: "https://github.com/keathley/butler_cage"}
     ]
   end
 end
