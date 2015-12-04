@@ -7,6 +7,7 @@ defmodule Butler.Cage.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     package: package,
      deps: deps]
   end
 
@@ -28,5 +29,13 @@ defmodule Butler.Cage.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:butler, "~> 0.6.2"}]
+  end
+
+  defp package do
+    [
+      maintainers: ["Chris Keathley"]
+    , licenses: ["MIT"]
+    , links: %{github: "https://github.com/keathley/butler_cage"}
+    ]
   end
 end
