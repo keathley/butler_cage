@@ -8,7 +8,7 @@ defmodule Butler.Cage do
   @url "http://cageme.herokuapp.com"
 
   @usage """
-  butler cageme - replies with a hillarious picture of Nick Cage.
+  #{name} cageme - replies with a hillarious picture of Nick Cage.
   """
   respond ~r/cageme/, conn do
     :random.seed(:os.timestamp)

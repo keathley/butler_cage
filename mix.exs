@@ -29,7 +29,7 @@ defmodule Butler.Cage.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:butler, "~> 0.6.2"}]
+    [{:butler, "~> 0.7.0"}]
   end
 
   defp description do
